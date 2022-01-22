@@ -2,4 +2,29 @@ body *{
     margin: 0px;
     padding: 0px;
 }
+    /* Parameters of the body */
+a{
+    text-decoration: none;
+    color: black;
+}
+    /* General parameters of the links */
+li{
+    list-style: none;
+}
+    /* General parameters of the li */
 
+header{
+    grid-auto-columns: 1fr auto 1fr;
+    display: grid;
+    border: 2px solid black;
+    grid-template-areas: "lo empty nav";
+}
+
+#lo{
+    grid-area: lo;
+}
+
+header nav{
+    grid-area: nav;
+}
+    /* Parameters of the header */
