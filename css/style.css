@@ -7,7 +7,6 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Josefin Sans', sans-serif;
-    background-color: #F4F6F3;
 }
     /* Parameters of the body */
 a{
@@ -25,7 +24,7 @@ h2{
     font-weight:500 ;
     letter-spacing: 2px;
 }
-        /*General parameters of the h2*/
+    /*General parameters of the h2*/
 
 .line-large{
     background-color: black;
@@ -33,7 +32,15 @@ h2{
     height: 4px;
     margin: 15px 0 0 0;
 }
-            /*General parameters of the larger lines*/
+    /*General parameters of the larger lines*/
+
+.line-small {
+    background-color: black;
+    width: 29px;
+    height: 2px;
+    margin: 62px 0 0 0;
+}
+    /*General parameters of the smaller lines*/
 
 header {
     display:flex;
@@ -78,7 +85,7 @@ header nav ul{
 
 .primary-section{
     background-image: url(../images/vecteezy_top-view-monstera-other-leaves-with-copy-space-high-quality-beautiful-photo-concept_2996065.jpg);
-    background-color: initial;
+    background-attachment: inherit;
     background-size: cover;
     height: 800px;
     border: 20px solid white;
@@ -98,30 +105,36 @@ header nav ul{
 
 
 .secondary-section {
+    background-color: #F4F6F3;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    height: 700px;
+    padding: 0 0 174px 0;
 }
     /*Parameters of the sections with the three plants cards*/
 
-
+.secondary-section h2 {
+    margin: 134px 0 0 0;
+}
+    /*Parameters of the h2 in the plants items block*/
 
 .plants-bloc{
     width: 80%;
-    height: 396px;
     margin: 0 auto 0 auto;
     display: flex;
     justify-content: space-between;
-    margin: 20px auto 0 auto;
+    margin: 67px auto 0 auto;
 }
 
 .plants-bloc figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 300px;
-    height: 100%;
     text-align: center;
     box-shadow: 0px 9px 38px -7px #0000007a, 0px 32px 25px -27px #00000047;
+    padding: 0 0 62px 0;
 }
 
 .plants-bloc figure img{
@@ -132,6 +145,7 @@ header nav ul{
 .plants-bloc p{
     margin: 20px 0 10px 0;
 }
+
 
 
 .tertiary-figure, .quaternary-section, footer{
