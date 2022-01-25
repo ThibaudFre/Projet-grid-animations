@@ -34,6 +34,14 @@ h2{
 }
     /*General parameters of the larger lines*/
 
+.line-medium{
+    background-color: black;
+    width: 55px;
+    height: 4px;
+    margin: 15px 0 0 0;
+}
+        /*General parameters of the larger lines*/
+
 .line-small {
     background-color: black;
     width: 29px;
@@ -126,6 +134,7 @@ header nav ul{
     justify-content: space-between;
     margin: 67px auto 0 auto;
 }
+    /*Parameters of the plants bloc*/
 
 .plants-bloc figure {
     display: flex;
@@ -136,21 +145,94 @@ header nav ul{
     box-shadow: 0px 9px 38px -7px #0000007a, 0px 32px 25px -27px #00000047;
     padding: 0 0 62px 0;
 }
+    /*Parameters of the figure int the plants-bloc*/
 
 .plants-bloc figure img{
     object-fit: contain;
     width: 100%;
 }
-
+    /*Parameters of the img of the cards in the plants bloc figure*/
 .plants-bloc p{
     margin: 20px 0 10px 0;
+    line-height: 27px;
 }
+    /*Parameters of the p of the cards in the plants-bloc figcaption*/
 
-
-
-.tertiary-figure, .quaternary-section, footer{
-    display: none;
+.tertiary-figure{
+    display: flex;
 }
+    /*Parameters of the figure "ABOUT"*/
+
+.tertiary-figure img{
+    width: 50%;
+}
+    /*Parameters of the img in the figure "ABOUT"*/
+        
+.tertiary-figure figcaption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+    /*Parameters of the figcaption in the figure "ABOUT"*/
+
+.tertiary-figure p{
+    width: 70%;
+    text-align: justify;
+    line-height: 30px;
+    margin: 88px 0 0 0;
+
+}
+    /*Parameters of the p in the figure "ABOUT"*/
+
+.quaternary-section {
+background-color: #E1E6E0 ;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 156px 0 198px 0;
+}
+    /*Parameters of the section to "SUBSCRIBE"*/
+
+.quaternary-section h2{
+    margin:  0 0 20px 0;
+}
+    /*Parameters of the h2 "SUBSCRIBE" in  the section to "SUBSCRIBE"*/
+
+.quaternary-section h3{
+    font-weight: 400;
+    margin: 0 0 25px 0;
+}
+    /*Parameters of the h3 "Sign-up" in  the section to "SUBSCRIBE"*/
+
+input{
+    width: 500px;
+    height: 60px;
+    border: 5px solid rgba(249, 255, 247, 0.336);
+    background-color: rgb(241, 243, 240);
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+        /*Parameters of the input in  the section to "SUBSCRIBE"*/
+
+    .quaternary-section button {
+        background-color: initial;
+        height: 38px;
+        width: 141px;
+        border: 2px solid black;
+        margin: 30px 0 0 0;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        padding: 7px 0 4px 0;
+    }
+    /*Parameters of the button "SUBMIT" in  the section to "SUBSCRIBE"*/
+
+
 
 
 
