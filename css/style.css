@@ -205,6 +205,11 @@ padding: 156px 0 198px 0;
     margin: 0 0 25px 0;
 }
     /*Parameters of the h3 "Sign-up" in  the section to "SUBSCRIBE"*/
+.quaternary-section form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 input{
     width: 500px;
@@ -216,9 +221,9 @@ input{
     font-size: 15px;
     font-weight: 400;
 }
-        /*Parameters of the input in  the section to "SUBSCRIBE"*/
+    /*Parameters of the input in  the section to "SUBSCRIBE"*/
 
-    .quaternary-section button {
+.quaternary-section button {
         background-color: initial;
         height: 38px;
         width: 141px;
@@ -229,8 +234,60 @@ input{
         font-weight: 700;
         letter-spacing: 3px;
         padding: 7px 0 4px 0;
-    }
+}
     /*Parameters of the button "SUBMIT" in  the section to "SUBSCRIBE"*/
+.plants-names-section{
+        background-color: #16302399;
+        padding: 70px 20px 70px 20px;
+}
+    /*Parameters of the section with the plants names*/
+.plants-names-bloc{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-column-gap: 1px;
+        grid-row-gap: 1px;
+}
+    /*Parameters of the plant's name container*/
+.plants-names-bloc a div{
+        color: white;
+        border:1px solid white;
+}
+    /*Parameter to color the text the names plants in white*/
+#plant1{
+
+}
+footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 90px 107px 90px 70px;
+}
+    /*Parameters of the footing*/
+.social-net{
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+}
+    /*Parameters of the social-network links*/
+.round-logo{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+    /*Parameters of the circle div around social logos*/
+footer ul{     display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+    /*Parameters of the ul in the nav's footer*/
+
+
 
 
 
