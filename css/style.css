@@ -239,23 +239,38 @@ input{
 .plants-names-section{
         background-color: #16302399;
         padding: 70px 20px 70px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 }
     /*Parameters of the section with the plants names*/
+
+.plants-names-section h2{
+    margin: 23px 0 0 0;
+}
+    /*Parameters of the h2 in the section with the plants names*/
+
 .plants-names-bloc{
         display: grid;
         grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 1px;
         grid-row-gap: 1px;
+        margin: 25px 0 0 0;
+        grid-template-areas:    "p1 p1 p1 p2 p2 p2"
+                                "p1 p1 p1 p2 p2 p2"
+                                ;
 }
     /*Parameters of the plant's name container*/
+
 .plants-names-bloc a div{
         color: white;
         border:1px solid white;
 }
     /*Parameter to color the text the names plants in white*/
-#plant1{
 
+#plant1{
+    grid-area: p1;
 }
 footer{
         display: flex;
