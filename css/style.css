@@ -247,31 +247,139 @@ input{
 
 .plants-names-section h2{
     margin: 23px 0 0 0;
+    color: white;
 }
     /*Parameters of the h2 in the section with the plants names*/
+.white-bar{
+    background-color: white;
+    height: 2px;
+    width: 30px;
+}
 
 .plants-names-bloc{
         display: grid;
         grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-column-gap: 1px;
-        grid-row-gap: 1px;
-        margin: 25px 0 0 0;
-        grid-template-areas:    "p1 p1 p1 p2 p2 p2"
-                                "p1 p1 p1 p2 p2 p2"
-                                ;
+        grid-template-rows: repeat(15, 40px);
+        grid-gap: 5px;
+        margin: 40px 0 0 0;
+        width: 90%;
 }
     /*Parameters of the plant's name container*/
 
-.plants-names-bloc a div{
+.plants-names-bloc  a {
         color: white;
         border:1px solid white;
+        border-radius: 1px;
 }
     /*Parameter to color the text the names plants in white*/
 
-#plant1{
-    grid-area: p1;
+.plants-names-bloc div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    padding: 70px 5px 0 5px;
 }
+    /*Under you can see each plants name position*/
+#plant1{
+    grid-area: 1/1/5/2;
+}
+
+#plant2{
+    grid-area: 1/2/5/3;
+}
+
+#plant3{
+    grid-area: 5/1/8/3;
+}
+
+#plant4{
+    grid-area: 1/7/5/9;
+}
+
+#plant5{
+    grid-area: 12/3/16/5;
+}
+
+#plant6 {
+    grid-area: 9/9/12/11;
+}
+
+#plant7{
+    grid-area: 1/6/9/7;
+}
+
+#plant8{
+    grid-area: 12/1/16/3;
+}
+
+#plant9{
+    grid-area: 5/8/9/10;
+}
+
+#plant10{
+    grid-area: 12/6/16/8;
+}
+
+#plant11{
+    grid-area: 8/5/16/6;
+}
+
+#plant12{
+    grid-area: 8/1/12/2;
+}
+
+#plant13{
+    grid-area: 1/3/8/4;
+}
+
+#plant14{
+    grid-area: 12/10/16/11;
+}
+
+#plant15{
+    grid-area: 1/4/5/6;
+}
+
+#plant16{
+    grid-area: 1/9/5/11;
+}
+
+#plant17{
+    grid-area: 8/2/12/4;
+}
+
+#plant18{
+    grid-area: 9/8/16/9;
+}
+
+#plant19{
+    grid-area: 5/10/9/11;
+}
+
+#plant20{
+    grid-area: 12/9/16/10;
+}
+
+#plant21{
+    grid-area: 5/4/8/6;
+}
+
+#plant22{
+    grid-area: 9/6/12/8;
+}
+
+#plant23{
+    grid-area: 8/4/12/5;
+}
+
+#plant24{
+    grid-area: 5/7/9/8;
+}
+
+
+
+
 footer{
         display: flex;
         justify-content: space-between;
