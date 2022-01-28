@@ -299,6 +299,7 @@ input{
 
 #plant5{
     grid-area: 12/3/16/5;
+    background: url(../images/pexels-cottonbro-5858235.png) 8% 15% fixed no-repeat;
 }
 
 #plant6 {
@@ -307,6 +308,7 @@ input{
 
 #plant7{
     grid-area: 1/6/9/7;
+    background: url(../images/pexels-katarzyna-modrzejewska-7494831.png) 64% 2% fixed no-repeat
 }
 
 #plant8{
@@ -315,6 +317,7 @@ input{
 
 #plant9{
     grid-area: 5/8/9/10;
+    background: url(../images/pexels-anca-7189356.png) fixed right no-repeat;
 }
 
 #plant10{
@@ -327,14 +330,17 @@ input{
 
 #plant12{
     grid-area: 8/1/12/2;
+    background: url(../images/pexels-yufan-jiang-9935749.png) 0% -33% fixed no-repeat;
 }
 
 #plant13{
     grid-area: 1/3/8/4;
+    background: url(../images/pexels-prachot-yuenyong-8155407.png) 17% 30% fixed no-repeat;
 }
 
 #plant14{
     grid-area: 12/10/16/11;
+    background: url(../images/pexels-yufan-jiang-9935762.png) -5% 5%fixed;
 }
 
 #plant15{
@@ -376,9 +382,6 @@ input{
 #plant24{
     grid-area: 5/7/9/8;
 }
-
-
-
 
 footer{
         display: flex;
