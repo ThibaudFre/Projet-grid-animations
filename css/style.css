@@ -103,90 +103,132 @@ header nav ul{
 }
     /*Parameters of the section of the "LOREM ipsum dolor" h1 */
 
-.letter1{
-    animation: becomegreen1 15s;
-}
-
-@keyframes becomegreen1{
-    0%{
-        opacity: 70%;
-        color: rgba(33, 78, 15, 0);
-    }
-    
-    30%{
-        color: rgb(33, 78, 15);
-    }
-}
-
-.letter2{
-    animation: becomegreenandbig 14s;
-}
-
-@keyframes becomegreenandbig{
-    0%{
-        opacity: 70%;
-        font-size: 30px;
-        color: rgba(33, 78, 15, 0);
-    }
-    
-    40%{
-        color: rgb(33, 78, 15);
-    }
-}
-
-.letter3{
-    animation: becomegreen3 13s;
-}
-
-@keyframes becomegreen3{
-    0%{
-        opacity: 70%;
-        color: rgba(33, 78, 15, 0);
-    }
-
-    50%{
-        color: rgb(33, 78, 15);
-    }
-}
-
-.letter4{
-    animation: becomegreen4 12s;
-}
-
-@keyframes becomegreen4{
-    0%{
-        opacity: 70%;
-        color: rgba(33, 78, 15, 0);
-    }
-
-    60%{
-        color: rgb(33, 78, 15);
-    }
-}
-
-.letter5{
-    animation: becomegreen5 11s;
-}
-
-@keyframes becomegreen5{
-    0%{
-        opacity: 70%;
-        color: rgba(33, 78, 15, 0);
-    }
-
-    70%{
-        color: rgb(33, 78, 15);
-    }
-}
-
-
 .primary-section h1{
     font-size: 100px;
     letter-spacing: 2px;
 }
     /*Parameters of the h1 "LOREM "  in the primary section */
 
+/*Down you can see the animation of the "LOREM ipsum dolor" h1 and h2*/
 
+.letter1{
+    animation: becomegreen1 10s;
+}
+
+@keyframes becomegreen1{
+    0%{
+        opacity: 0%;
+        color: rgba(33, 78, 15, 0);
+    }
+    40%{
+        color: rgb(33, 78, 15);
+    }
+}
+        /* Letter I*/
+
+.letter2{
+    animation: becomegreenandbig 9s;
+}
+
+@keyframes becomegreenandbig{
+    0%{
+        opacity: 0%;
+        font-size: 30px;
+        color: rgba(33, 78, 15, 0);
+    }
+    50%{
+        color: rgb(33, 78, 15);
+    }
+}
+        /* Letter P*/
+
+.letter3{
+    animation: becomegreen3 8s;
+}
+
+@keyframes becomegreen3{
+    0%{
+        opacity: 0%;
+        color: rgba(33, 78, 15, 0);
+    }
+    60%{
+        color: rgb(33, 78, 15);
+    }
+}
+        /* Letter S*/
+        
+.letter4{
+    animation: becomegreen4 7s;
+}
+
+@keyframes becomegreen4{
+    0%{
+        opacity: 0%;
+        color: rgba(33, 78, 15, 0);
+    }
+    70%{
+        color: rgb(33, 78, 15);
+    }
+}
+        /* Letter U*/
+
+.letter5{
+    animation: becomegreen5 6s;
+}
+
+@keyframes becomegreen5{
+    0%{
+        opacity: 0%;
+        color: rgba(33, 78, 15, 0);
+    }
+    80%{
+        color: rgb(33, 78, 15);
+    }
+}
+        /* Letter M*/
+
+.primary-section h2{
+    animation: h2anim 8s ;
+    position: relative;
+}
+    /* Parameters of the h2 "IPSUM DOLOR*/
+
+@keyframes h2anim {
+    0%{
+        opacity: 0%;
+        bottom: 50px;
+        color: rgb(33, 78, 15);
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+    /*Animation of the h2 "IPSUM DOLOR*/
+
+.animline{
+    animation: 9s animline ;
+    position: relative;
+}
+
+@keyframes animline {
+    0%{
+        opacity: 0%;
+        transform: scale(0.2);
+        bottom: 100px;
+    }
+    30%{
+        opacity: 30%;
+        background-color: rgb(33, 78, 15); 
+    }
+
+    50%{
+        background-color: rgb(33, 78, 15); 
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+    /*Animation of the Large line under "IPSUM DOLOR*/
 
 .secondary-section {
     background-color: #F4F6F3;
