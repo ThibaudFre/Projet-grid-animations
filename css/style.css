@@ -50,6 +50,8 @@ h2{
 }
     /*General parameters of the smaller lines*/
 
+        /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
 header {
     display:flex;
     justify-content: space-between;
@@ -62,6 +64,18 @@ header {
     margin: 45px 0 10px 40px;
 }
     /*Parameters of the logo Lo on the left top corner of the website */
+
+#logo:hover .obecomegreen{
+    animation: 5s obecomegreen;
+}
+    /* Animation when the house go over the Logo "LO" of the primary section*/
+
+@keyframes obecomegreen {
+    10%{
+        color: rgb(65, 148, 32);
+    }
+}
+
 header nav {
     margin: 45px 0 0 0;
     font-size: 13px;
@@ -77,18 +91,25 @@ header nav ul{
     display: flex;
     justify-content: space-around;
     width: 400px;
-
 }
     /*Parameters of the ul in the nav of the header*/
 
-#link-border {
-    border: 2px solid black;
-    font-size: 13px;
-    letter-spacing: 2px;
-    padding: 10px 22px 7px 22px;
-    border-radius: 2.5px;
+.underline{
+    position: relative;
+    margin: auto;
+    background-color: rgb(5,5,5);
+    width:0%;
+    height: 2px;
+    opacity: 0%;
+    transition: width 0.4s cubic-bezier(.38,.64,.37,.86), opacity 0.7s;
 }
-    /* Parameters of the link "SUBSCRIBE" */
+/*Under and above this is the animation when the house go on the nav links*/
+
+header nav a:hover  ~ .underline{
+    width: 100%;
+    opacity: 100%;
+}
+        /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .primary-section{
     background-image: url(../images/vecteezy_top-view-monstera-other-leaves-with-copy-space-high-quality-beautiful-photo-concept_2996065.jpg);
@@ -128,7 +149,13 @@ header nav ul{
 
 .letter2{
     animation: becomegreenandbig 9s;
+    transition:color 1s cubic-bezier(.38,.64,.37,.86);
 }
+
+.primary-section h1:hover .letter2{
+    color: rgb(33, 78, 15);
+}
+    /* Above you have the transition when the house go on the h1, the O of 3LOREM" become green*/
 
 @keyframes becomegreenandbig{
     0%{
@@ -188,33 +215,31 @@ header nav ul{
         /* Letter M*/
 
 .primary-section h2{
-    animation: h2anim 8s ;
-    position: relative;
+    animation: h2anim 8s;
 }
-    /* Parameters of the h2 "IPSUM DOLOR*/
+    /* Parameters of the animation of the h2 "IPSUM DOLOR*/
 
 @keyframes h2anim {
     0%{
         opacity: 0%;
-        bottom: 50px;
+        transform: translate3d(0,-50px,0);
         color: rgb(33, 78, 15);
     }
     100%{
-        bottom: 0px;
+        transform: translate3d(0,0,0);
     }
 }
     /*Animation of the h2 "IPSUM DOLOR*/
 
 .animline{
     animation: 9s animline ;
-    position: relative;
 }
 
 @keyframes animline {
     0%{
         opacity: 0%;
         transform: scale(0.2);
-        bottom: 100px;
+        transform: translate3d(0,-100px,0);
     }
     30%{
         opacity: 30%;
@@ -225,10 +250,12 @@ header nav ul{
         background-color: rgb(33, 78, 15); 
     }
     100%{
-        bottom: 0px;
+        transform: translate3d(0,0,0);
     }
 }
     /*Animation of the Large line under "IPSUM DOLOR*/
+
+        /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .secondary-section {
     background-color: #F4F6F3;
@@ -240,10 +267,27 @@ header nav ul{
 }
     /*Parameters of the sections with the three plants cards*/
 
+
+    
 .secondary-section h2 {
     margin: 134px 0 0 0;
+    transition: transform 1s cubic-bezier(0.0, 0.0, 0.58, 1.0);
 }
     /*Parameters of the h2 in the plants items block*/
+
+.secondary-section:hover h2{
+    transform: translate3d(0, -2px,0) scale(1.1);
+}
+    /*Parameters of the transition of the h2 when the house go over the secondary-section */
+
+.secondary-section .line-large{
+    transition: transform 1s cubic-bezier(0.0, 0.0, 0.58, 1.0);
+}
+    /*Under and above: parameters of the Large line transition when the house go over the secondary-section */
+
+.secondary-section:hover .line-large{
+    transform: translate3d(0, 5px,0) scale(0.8);
+}
 
 .plants-bloc{
     width: 80%;
@@ -262,8 +306,26 @@ header nav ul{
     text-align: center;
     box-shadow: 0px 9px 38px -7px #0000007a, 0px 32px 25px -27px #00000047;
     padding: 0 0 62px 0;
+    transform: scale(1);
+    transition: transform 1s;
 }
     /*Parameters of the figure int the plants-bloc*/
+
+    /* Under you can find the transition of the plants cards figure in the secondary-section with his small line*/
+
+.plants-bloc figure:hover{
+    transform: scale(1.10);
+}
+
+.plants-bloc figure .line-small{
+    transition: transform 1s;
+}
+
+.plants-bloc figure:hover .line-small{
+    transform:scale(0.7);
+}
+
+
 
 .plants-bloc figure img{
     object-fit: contain;
@@ -276,10 +338,30 @@ header nav ul{
 }
     /*Parameters of the p of the cards in the plants-bloc figcaption*/
 
+        /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
 .tertiary-figure{
     display: flex;
 }
     /*Parameters of the figure "ABOUT"*/
+
+    /*Under you can see the same transition of the h2 and his line as the secondary-section with the tertiary-section*/
+
+.tertiary-figure h2{
+    transition: transform 1s cubic-bezier(0.0, 0.0, 0.58, 1.0);        
+}
+
+.tertiary-figure:hover h2{
+    transform: translate3d(0, -2px,0) scale(1.1);
+}
+
+.tertiary-figure .line-medium{
+    transition: transform 1s cubic-bezier(0.0, 0.0, 0.58, 1.0);
+}
+
+.tertiary-figure:hover .line-medium{
+    transform: translate3d(0, 5px,0) scale(0.8);
+}
 
 .tertiary-figure img{
     width: 50%;
@@ -302,6 +384,8 @@ header nav ul{
 
 }
     /*Parameters of the p in the figure "ABOUT"*/
+
+            /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .quaternary-section {
 background-color: #E1E6E0 ;
@@ -352,8 +436,17 @@ input{
         font-weight: 700;
         letter-spacing: 3px;
         padding: 7px 0 4px 0;
+        transition: border-color 0.15s, color 0.2s;
 }
     /*Parameters of the button "SUBMIT" in  the section to "SUBSCRIBE"*/
+
+    /*Under: Parameters of the button "SUBMIT" in the section "SUBSCRIBE*/
+
+.quaternary-section button:hover {
+    border-color: rgb(110, 109, 109);
+    color: rgb(110, 109, 109);
+}
+
 .plants-names-section{
         background-color: #16302399;
         padding: 70px 20px 70px 20px;
@@ -501,6 +594,19 @@ input{
     grid-area: 5/7/9/8;
 }
 
+.hoverbloc{
+    opacity: 50%;
+    transition: opacity 1s cubic-bezier(.38,.64,.37,.86), transform 1s cubic-bezier(.38,.64,.37,.86);
+}
+    /*Above and under: parameters of the transition when the house go over the plants shop blocs int the plants shop section*/
+
+.hoverbloc:hover{
+    transform: scale(0.95);
+    opacity: 100%;
+}
+
+        /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
 footer{
         display: flex;
         justify-content: space-between;
@@ -514,6 +620,7 @@ footer{
         width: 10%;
 }
     /*Parameters of the social-network links*/
+    
 .round-logo{
     width: 23px;
     height: 23px;
@@ -523,13 +630,53 @@ footer{
     justify-content: center;
     align-items: center;
     color: white;
+    transition: background-color 0.5s, color 0.5s;
 }
     /*Parameters of the circle div around social logos*/
-footer ul{     display: flex;
+
+.round-logo:hover{
+    background-color:#E1E6E0 ;
+    color: rgb(43, 97, 22);
+}
+    /*Parameters of the transition when the house go over the socials network logos*/
+
+footer ul{     
+    display: flex;
     justify-content: space-between;
     width: 20%;
 }
     /*Parameters of the ul in the nav's footer*/
+
+footer ul li{
+    display: flex;
+}
+    /*Parameter of the li in the footer*/
+
+    /*Under: transitions when the house go over the footer links*/
+
+.linegrewsdown{
+    position: relative;
+    margin: 0px 4px 0 0;
+    background-color: rgb(33, 78, 15);
+    border-radius: 20px;
+    width: 4px;
+    height: 0%;
+    opacity: 0%;
+    transition: height 0.5s cubic-bezier(.38,.64,.37,.86), opacity 0.7s;
+}
+
+footer ul li:hover .linegrewsdown{
+    height: 90%;
+    opacity: 100%;
+}
+
+footer ul li a{
+    transition: transform 0.5s cubic-bezier(.38,.64,.37,.86);
+}
+
+footer ul li:hover a{
+    transform: translate3d(5px,-2.5px,0) scale(1.1);
+}
 
 
 
